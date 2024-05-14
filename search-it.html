@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search It </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+ <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        font-family: 'Noto Sans', sans-serif;
+        
+    }
+    section h1{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+ </style>
+<body class="bg-orange-50">
+    <header class="flex justify-between p-5 bg-orange-50">
+        <div>
+            <img src="./Photos/logo-search-it-Photoroom.png-Photoroom.png" alt="site logo" class="w-20">
+        </div>
+        <div class="flex mr-8 space-x-6">
+           <form class="bg-white rounded-3xl h-8 pb-8 pr-5 pl-6 pt-3 mt-5" >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" class="outline-none space-x-4">
+           </form>
+           <button class="text-sm font-semibold hover:text-blue-500">Log in</button>
+           <button class="bg-red-600 rounded-3xl h-8 pb-9 pl-5 pr-5 pt-4 m-4 text-sm font-semibold text-white hover:bg-blue-500">Sign up</button>
+        </div>
+    </header>
+    <section class="text-center font-medium mt-24">
+        <h1 class="text-6xl mb-5 leading-tight">The world’s destination for design</h1>
+        <p class="text-lg">Get inspired by the work of millions of top-rated designers & agencies around the world.</p>
+    </section>
+    <section class="mt-14">
+        <h2 class="text-center text-4xl">Explore inspiring designs</h2>
+        <div class="index"></div>
+    </section>
+    <script src="https://kit.fontawesome.com/5bd5ea8d45.js" crossorigin="anonymous"></script>
     <script src="search-it.js"></script>
 </body>
 </html>
